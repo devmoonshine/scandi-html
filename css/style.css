@@ -199,6 +199,7 @@ nav.sub-menu li:nth-child(8) {
 main {
     width: 984px;
     height: 500px;
+    display: block;
     background-color: white;
     padding-left: 40px;
     padding-top: 5px;
