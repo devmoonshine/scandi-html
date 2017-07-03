@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab');
+body {
+    background-image: url('../img/bg.jpg');
+    letter-spacing: .3px;
+}
+
+
+/* Links */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Main container of the page */
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+/* Header elements */
+
+header {
+    height: 225px;
+    background-color: #fff;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    color: #ababab;
+}
+
+
+/* Upper right user navigation */
+
+nav.user-nav {
+    width: 470px;
+    font: 11px 'Pontano Sans';
+    float: right;
+    line-height: 30px;
+}
+
+nav.user-nav li:nth-child(3) {
+    margin-left: 3px;
+}
+
+nav.user-nav li:nth-child(5) {
+    margin-left: -3px;
+}
+
+nav.user-nav li:not(.live-chat):not(:last-child) {
+    margin-right: 28px;
+}
+
+nav.user-nav li.live-chat {
+    width: 72px;
+    height: 36px;
+    background-image: url('../img/live-chat.png');
+    color: #e8ffff;
+    font-family: 'Antic Slab', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 27px;
+    text-transform: uppercase;
+}
+
+
+/* Main navigation */
+
+nav.main-nav {
+    width: 688px;
+    height: 40px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-top: -34px;
+    line-height: 40px;
+    position: relative;
+    left: 335px;
+}
+
+nav.main-nav li {
+    text-transform: uppercase;
+    font-family: 'Antic Slab', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+}
+
+nav.main-nav li:nth-child(2),
+nav.main-nav li:nth-child(4) {
+    margin: 0 -1px;
+}
+
+nav.main-nav li:nth-child(5) {
+    margin: 0 4px
+}
+
+nav.main-nav li:nth-child(6) {
+    margin: 0 -5px
+}
+
+nav.main-nav li:not(:last-of-type) {
+    margin-right: 57px;
+}
+
+nav.main-nav li.search {
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+    background-image: url('../img/magnifying_glass.png');
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+
+/* Drop down menu block for main navigation */
+
+nav.sub-menu {
+    width: 984px;
+    height: 105px;
+    background-color: #f2f2f2;
+    position: relative;
+    top: 20px;
+    padding-left: 40px;
+    line-height: 103px;
+    font-family: 'Antic Slab';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav.sub-menu li {
+    margin-right: 85px;
+    color: #303030;
+}
+
+nav.sub-menu li:nth-child(2) {
+    margin: 0 25px 0 5px;
+}
+
+nav.sub-menu li:nth-child(3) {
+    margin: 0 25px 0 59px;
+}
+
+nav.sub-menu li:nth-child(4) {
+    margin: 0 25px 0 53px;
+}
+
+nav.sub-menu li:nth-child(5) {
+    margin: 0 25px 0 31px;
+}
+
+nav.sub-menu li:nth-child(6) {
+    margin: 0 25px 0 39px;
+}
+
+nav.sub-menu li:nth-child(7) {
+    margin: 0 25px 0 46px;
+}
+
+nav.sub-menu li:nth-child(8) {
+    margin: 0 25px 0 42px;
+}
+
+
+/* Gigi Brooks logo and slogan */
+
+.brand {
+    width: 269px;
+    height: 86px;
+    text-indent: -9999px;
+    background-image: url('../img/brand.png');
+    position: relative;
+    top: 22px;
+    left: 15px;
+}
+
+.slogan {
+    font-family: 'Antic Slab';
+    font-size: 8px;
+    font-weight: 600;
+    color: #b7b8b6;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    position: relative;
+    left: 100px;
+    top: 1.5px;
+}
+
+
+/* Main block with post */
+
+main {
+    width: 984px;
+    height: 500px;
+    background-color: white;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+article.post {
+    width: 310px;
+    height: 462px;
+    color: #949494;
+}
+
+article.post .post-title+.post-body {
+    width: 270px;
+    height: 325px;
+    padding: 19px;
+    margin-top: -40px;
+    padding-top: 80px;
+    line-height: 16px;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 0 25px 20px -18px rgba(0, 0, 0, .15);
+    box-shadow: 0 25px 20px -18px rgba(0, 0, 0, .15);
+}
+
+.post-title {
+    width: 217px;
+    height: 40px;
+    font-family: 'Antic Slab';
+    font-size: 30px;
+    color: #f5ffff;
+    text-transform: uppercase;
+    background-color: #afcacc;
+    line-height: 40px;
+    position: relative;
+    top: 23px;
+    left: -16px;
+    letter-spacing: 1.6px;
+    padding-left: 33px;
+}
+
+.post-title:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0;
+    border-width: 0 0 11px 16px;
+    border-style: solid;
+    border-color: #86a6a4 transparent;
+}
+
+.post-picture {
+    width: 656px;
+    height: 425px;
+    background-image: url('../img/post-image.jpg');
+    background-color: rgba(255, 255, 255, .1);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 25px 30px -22px rgba(0, 0, 0, .15);
+    box-shadow: 0 25px 30px -22px rgba(0, 0, 0, .15);
+    position: relative;
+    left: 328px;
+    top: -424px;
+}
+
+article p {
+    font-family: 'Pontano Sans';
+    font-size: 14px;
+}
